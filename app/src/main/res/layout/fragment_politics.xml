@@ -1,0 +1,57 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        >
+        <include
+            android:id="@+id/mainheader_layout" layout="@layout/main_header"/>
+        <LinearLayout
+            android:layout_below="@+id/mainheader_layout"
+            android:id="@+id/top_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="4"
+            android:orientation="vertical">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/images_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:visibility="gone"
+            />
+
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ipl_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            />
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/empty_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/appcolor"
+            android:text="@string/no_updated_news"
+            android:textSize="@dimen/_14sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:fontFamily="sans-serif"
+            />
+
+    </RelativeLayout>
+</layout>

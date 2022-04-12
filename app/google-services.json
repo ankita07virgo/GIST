@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1052546265106",
+    "project_id": "gist-c8be5",
+    "storage_bucket": "gist-c8be5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052546265106:android:116221f001e23e2929e8cb",
+        "android_client_info": {
+          "package_name": "com.aadya.aadyanews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052546265106-kgn1j45kiarcqq9ncdlnqufon50851h9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSA7MloLxlwR4SWwlOX43Q8jTqvkBGi3w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052546265106-kgn1j45kiarcqq9ncdlnqufon50851h9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

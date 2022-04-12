@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <include layout="@layout/detailedfrag_header"
+        android:id="@+id/included_detailed"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/roundredstrokebg"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageview_logo"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/applogo" />
+
+        <EditText
+            android:id="@+id/ed_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:background="@drawable/roundbg"
+            android:gravity="left|start"
+            android:hint="@string/enter_username"
+            android:padding="10dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/textcolor"
+            android:textColorHint="@color/appcolor"
+            android:textSize="@dimen/_14sdp" />
+
+        <EditText
+            android:id="@+id/ed_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:background="@drawable/roundbg"
+            android:gravity="left|start"
+            android:hint="@string/enter_password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/textcolor"
+            android:textColorHint="@color/appcolor"
+            android:textSize="@dimen/_14sdp" />
+
+        <EditText
+            android:id="@+id/ed_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:background="@drawable/roundbg"
+            android:gravity="left|start"
+            android:hint="@string/enter_name"
+            android:padding="10dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/textcolor"
+            android:textColorHint="@color/appcolor"
+            android:visibility="gone"
+            android:textSize="@dimen/_14sdp" />
+
+        <EditText
+            android:id="@+id/ed_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:background="@drawable/roundbg"
+            android:gravity="left|start"
+            android:hint="@string/enter_email"
+            android:padding="10dp"
+            android:textColor="@color/textcolor"
+            android:textColorHint="@color/appcolor"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/_14sdp" />
+
+        <EditText
+            android:id="@+id/ed_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:background="@drawable/roundbg"
+            android:gravity="left|start"
+            android:hint="@string/enter_mobile"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="@color/textcolor"
+            android:fontFamily="sans-serif"
+            android:maxLength="10"
+            android:visibility="gone"
+            android:textColorHint="@color/appcolor"
+            android:textSize="@dimen/_14sdp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/roundbg"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:text="@string/gender"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/appcolor"
+                android:textSize="@dimen/_14sdp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:checked="false"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/male"
+                    android:textColor="@color/appcolor"
+                    android:buttonTint="@color/appcolor"
+                    android:textSize="@dimen/_14sdp" />
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:checked="false"
+                    android:text="@string/female"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/appcolor"
+                    android:buttonTint="@color/appcolor"
+                    android:textSize="@dimen/_14sdp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/roundbg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_usertype"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:text="@string/usertype"
+                android:textColor="@color/appcolor"
+                android:fontFamily="sans-serif"
+                android:textSize="@dimen/_14sdp" />
+
+<androidx.appcompat.widget.AppCompatSpinner
+    android:id="@+id/usertype_spinner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:spinnerMode="dialog"
+    android:layout_margin="5dp"
+    android:minHeight="25dp"
+    android:background="@drawable/roundbg"/>
+
+
+        </LinearLayout>
+
+        <android.widget.Button
+            android:id="@+id/btn_registration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:background="@drawable/roundredcolorbg"
+            android:fontFamily="sans-serif"
+            android:text="@string/registration"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+             />
+    </LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>
+</layout>

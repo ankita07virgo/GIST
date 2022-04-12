@@ -1,0 +1,63 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/mainheader_layout" layout="@layout/main_header"/>
+
+        <LinearLayout
+            android:layout_below="@+id/mainheader_layout"
+            android:id="@+id/top_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+            <ImageView
+                android:id="@+id/img_entertainmentnews"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                />
+                <TextView
+                    android:id="@+id/tv_entertainment_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:padding="5dp"
+                    android:textColor="@color/appcolor"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/entertainment_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/empty_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/appcolor"
+            android:text="@string/no_updated_news"
+            android:textSize="@dimen/_14sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:fontFamily="sans-serif"
+            />
+
+    </RelativeLayout>
+</layout>

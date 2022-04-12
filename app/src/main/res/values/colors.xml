@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="appcolor">#CC0000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="whiteOff2">#f2f2f2</color>
+    <color name="notiSuccessColor">#24a903</color>
+    <color name="notiFailColor">#f4000c</color>
+    <color name="bottomnavcolor">#CCFFCC</color>
+    <color name="colorTransBg">#26000000</color>
+    <color name="blue_color">#85C1E9</color>
+    <color name="option1">#3d5ba5</color>
+    <color name="option2">#2f64e7</color>
+    <color name="option3">#626262</color>
+    <color name="option4">#743434</color>
+    <color name="option5">#651e1e </color>
+    <color name="option6">#6f4848 </color>
+    <color name="option7">#a0bd7f </color>
+    <color name="option8">#ff0000 </color>
+    <color name="option9">#ffbf00 </color>
+    <color name="option10">#996666 </color>
+    <color name="textcolor">#696969</color>
+
+</resources>

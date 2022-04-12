@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+   >
+
+    <LinearLayout
+        android:id="@+id/dialogue_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:minHeight="50dp"
+            android:gravity="center"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            android:background="@color/appcolor"
+            android:text="@string/newsaudio"
+
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/coviddemo" />
+
+            <ImageView
+                android:id="@+id/img_audioplay"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:padding="5dp"
+                android:src="@drawable/playicon"
+                app:tint="@color/white" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_audio_play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/textcolor"
+            android:gravity="left"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/_12sdp" />
+
+
+
+
+
+    </LinearLayout>
+</layout>

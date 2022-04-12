@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/local_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+
+        <LinearLayout
+            android:id="@+id/ll_local_news"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_local_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:fontFamily="sans-serif"
+                android:padding="4dp"
+                android:textColor="@color/appcolor"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/tv_localnews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:padding="4dp"
+                android:textColor="@color/textcolor"
+                android:text="@string/app_name"
+                android:textSize="@dimen/_11sdp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/img_audio"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerInside"
+                    android:layout_marginRight="5dp"
+                    app:tint="@color/textcolor"
+                    android:src="@drawable/ic_outline_headset_24" />
+
+                <ImageView
+                    android:id="@+id/img_download"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerInside"
+                    android:layout_marginRight="5dp"
+                    app:tint="@color/textcolor"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_outline_get_app_24" />
+
+                <ImageView
+                    android:id="@+id/img_bookamrk"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerInside"
+                    android:layout_marginRight="5dp"
+                    app:tint="@color/textcolor"
+                    android:src="@drawable/bookmarkicon" />
+
+                <ImageView
+                    android:id="@+id/img_share"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerInside"
+                    android:layout_marginRight="5dp"
+                    app:tint="@color/textcolor"
+                    android:src="@drawable/ic_outline_share_24" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_local"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:background="@drawable/roundredstrokebg"
+            android:src="@drawable/statenews" />
+    </LinearLayout>
+</layout>

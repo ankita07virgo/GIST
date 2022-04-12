@@ -1,0 +1,25 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <ImageView
+        android:id="@+id/imageview_photos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+    <TextView
+        android:id="@+id/tv_detailedphotos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/appcolor"
+        android:textSize="@dimen/_12sdp" />
+</RelativeLayout>
+</layout>

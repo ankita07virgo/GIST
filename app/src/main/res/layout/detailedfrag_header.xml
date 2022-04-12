@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:id="@+id/rl_detailfrag"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/appcolor">
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical|start"
+        android:src="@drawable/backarrow"
+        android:scaleType="centerInside"
+        android:padding="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_mainheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/app_name"
+        android:textSize="@dimen/_14sdp"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        />
+
+    <ImageView
+        android:id="@+id/img_loggedIn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/ic_baseline_person_24"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true"
+        app:tint="@color/white" />
+</RelativeLayout>
+</layout>

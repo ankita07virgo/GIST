@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbg"
+        android:gravity="center"
+        android:orientation="vertical"
+       >
+        <TextView
+            android:id="@+id/logoutheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:minHeight="50dp"
+            android:gravity="center"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            android:background="@color/appcolor"
+            android:text="@string/logouttag"
+
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/messageTtile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:minHeight="30dp"
+            android:gravity="center"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            android:text="@string/logout"
+
+            android:textColor="@color/appcolor" />
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+           android:weightSum="2"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <android.widget.Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_cancel"
+                android:padding="10dp"
+                android:stateListAnimator="@null"
+                android:text="@android:string/cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/appcolor"
+                android:textSize="@dimen/_12sdp" />
+
+            <android.widget.Button
+                android:id="@+id/okBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@android:string/ok"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:background="@drawable/button_login"
+                android:stateListAnimator="@null"
+                android:textSize="@dimen/_12sdp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,72 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+           >
+            <include
+                android:id="@+id/mainheader_layout" layout="@layout/main_header"/>
+            <RelativeLayout
+                android:id="@+id/top_relative"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+            <ImageView
+                android:id="@+id/img_indianews"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                 />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="India-US 2+2 dialogue Live: Will discuss pandemic, Chinese threats to security, says Mike Pompeo"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                   android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:fontFamily="sans-serif"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/india_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+
+                <TextView
+                    android:id="@+id/empty_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/appcolor"
+                    android:text="@string/no_updated_news"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:fontFamily="sans-serif"
+                    />
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+</layout>

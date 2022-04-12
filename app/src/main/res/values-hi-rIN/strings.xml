@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cust_app" />
+    <string name="please_select_app_icon_app_name">Please Select AppName and AppIcon</string>
+    <string name="news_name1">GISTNEWS</string>
+    <string name="news_name2">AAdyaNews</string>
+    <string name="news_name3">TechnoNews</string>
+    <string name="cust_color_app">Change Color Of App</string>
+    <string name="please_select_color_theme_app">Please select color theme of App</string>
+    <string name="addtag_successfully">Tag added successfully.</string>
+    <string name="DownloadedContent">DownloadedContent</string>
+    <string name="newsaudio">News Audio</string>
+</resources>

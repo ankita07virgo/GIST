@@ -1,0 +1,50 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+           >
+            <include
+                android:id="@+id/mainheader_layout" layout="@layout/main_header"/>
+            <RelativeLayout
+                android:layout_below="@+id/mainheader_layout"
+                android:id="@+id/top_relative"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/img_healthnews"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@+id/img_healthnews"
+                android:id="@+id/health_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/empty_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/appcolor"
+                android:text="@string/no_updated_news"
+                android:textSize="@dimen/_14sdp"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:visibility="gone"
+                android:fontFamily="sans-serif"
+                />
+
+
+        </RelativeLayout>
+
+</layout>

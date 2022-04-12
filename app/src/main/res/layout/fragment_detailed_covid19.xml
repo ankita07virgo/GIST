@@ -1,0 +1,139 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.aadya.gist.breakingnews.ui.DetailedLifestyleNewsFragment">
+
+        <include
+            android:id="@+id/included_detailed"
+            layout="@layout/detailedfrag_header" />
+
+        <RelativeLayout
+            android:id="@+id/rl_webview"
+            android:layout_width="match_parent"
+            android:layout_height="380dp">
+
+            <WebView
+                android:id="@+id/webView_detailedcovidnews"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/imgview_fullscreen"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_baseline_fullscreen_24"
+                android:visibility="gone"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_newsdes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/roundbg_corners_5"
+            android:backgroundTint="@color/colorTransBg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_coviddatetime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:fontFamily="sans-serif"
+                android:padding="5dp"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_coviddetailedtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:fontFamily="sans-serif"
+                android:padding="5dp"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <com.borjabravo.readmoretextview.ReadMoreTextView
+                android:id="@+id/tv_coviddetaileddes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:fontFamily="sans-serif"
+                android:padding="5dp"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/tv_withouturl_coviddetaileddes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:fontFamily="sans-serif"
+                android:padding="5dp"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/_11sdp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone">
+
+
+            <TextView
+                android:id="@+id/tv_news_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="25dp"
+                android:background="@drawable/roundbg_corners_5"
+                android:fontFamily="sans-serif"
+                android:gravity="left"
+                android:minHeight="150dp"
+                android:padding="10dp"
+                android:text="@string/app_name"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/_18sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img_rightarrow"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/roundbg_backgroundappcolor_leftcorners_5"
+                android:src="@drawable/ic_round_arrow_right_24"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/img_leftarrow"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/roundbg_backgroundappcolor_rightcorners_5"
+                android:src="@drawable/ic_round_arrow_left_24"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

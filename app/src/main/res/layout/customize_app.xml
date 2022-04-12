@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/appcolor"
+        android:text="@string/please_select_app_icon_app_name"
+        android:textSize="@dimen/_14sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_setting1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_title"
+        android:paddingLeft="5dp">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/applogo"/>
+        <TextView
+            android:id="@+id/tv_app1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/appcolor"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:text="@string/news_name1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_setting2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundredcolorbg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ll_setting1"
+        android:paddingLeft="5dp"
+
+        >
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/applogo"/>
+        <TextView
+            android:id="@+id/tv_app2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:text="@string/news_name2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_setting3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ll_setting2"
+        android:paddingLeft="5dp"
+        >
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/applogo"/>
+        <TextView
+            android:id="@+id/tv_app3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/appcolor"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:text="@string/news_name3"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+</layout>

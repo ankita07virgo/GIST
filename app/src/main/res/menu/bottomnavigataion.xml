@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+
+        android:id="@+id/navigation_breakingnews"
+        android:title="@string/breaking"
+        android:enabled="true"
+        android:icon="@drawable/applogo"
+        />
+
+    <item
+        android:id="@+id/navigation_Covid19"
+        android:title="@string/covid19"
+        android:enabled="true"
+        android:icon="@drawable/applogo"
+        />
+
+    <item
+        android:id="@+id/navigation_politics"
+        android:title="@string/politics"
+        android:enabled="true"
+        android:icon="@drawable/applogo"
+        />
+    <item
+        android:id="@+id/navigation_mynews"
+        android:title="@string/mynews"
+        android:enabled="true"
+        android:icon="@drawable/applogo"
+       />
+    <item
+        android:id="@+id/navigation_temp"
+        android:title="@string/temperature"
+        android:enabled="true"
+        android:icon="@drawable/applogo"
+        />
+</menu>
